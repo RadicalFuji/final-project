@@ -7,7 +7,7 @@ export function LoginForm(params) {
     };
 
     return (
-        <div className="box" style={{ maxWidth: "unset" }}>
+        <div className="box box3" style={{ maxWidth: "unset" }}> {/*Added box 3 class*/}
             <button onClick={params.login}>
                 {(params.currentUser) ? "Logout" : "Login"}
             </button>

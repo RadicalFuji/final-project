@@ -3,12 +3,16 @@ ol{
 }
 
 .scroll-container {
-  height: 400px; /* Adjust height as needed */
+  height: 300px; /* Adjust height as needed */
   width: 300px;
-  overflow-y: scroll;
-  border: 1px solid #ddd; /* Optional border for styling */
+  overflow-y: auto;
 }
 
-header,p{
+header,p{ /*Added style */
   font-weight:bold;
+  margin: 10px;
+  font-size: 3rem;
+  background: -webkit-linear-gradient(#29254F, #1A1446);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

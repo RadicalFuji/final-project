@@ -7,12 +7,14 @@ export function Articles(params) {
     let articleCount = (params.data.totalResults)?params.data.totalResults:0;
     return (
       <div>
-        <strong></strong>
-          <br/><strong>Query:</strong> {queryName}
-          <br/><strong>Query Text: </strong> {q}
-          <br/><strong>Language: </strong> {language}
-          <br/><strong>Page Size: </strong> {pageSize}
-        <br/><strong>Article Count:</strong>{articleCount}
+        <strong>Query Parameters</strong>
+        <ul>
+          <li><strong>Query:</strong> {queryName}</li>
+          <li><strong>Query Text: </strong> {q}</li>
+          <li><strong>Language: </strong> {language}</li>
+          <li><strong>Page Size: </strong> {pageSize}</li>
+        <li><strong>Article Count:</strong>{articleCount}</li>
+        </ul>
         <ol >{
             articles.map((item, idx) => {
               if(item){

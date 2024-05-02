@@ -7,9 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header p{
-  font-size: large;
+#queryName, #q { /*Styled*/
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
 }
+
+/* header p{
+  font-size: large;
+} */
 
 ol{
   padding-left:20px;
@@ -50,7 +56,7 @@ code {
 .title{
   font-weight: bold;
   display: block;
-  background-color: #888;
+  background-color: #1A1446; /*Styled*/
   color: white;
 }
 
@@ -70,4 +76,34 @@ code {
 }
 .moreVisible{
   display:block;
+}
+
+button, #submit { /*Styled, changed QueryForm submit button ID*/
+  background-color: #78E1E1;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.box2 { /*New style, added box2 class to NewsReader.js */
+  background-color: #FFD000;
+  border: none;
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.25);
+}
+
+.box3 { /*New style, added box3 class to LoginForm.js */
+  background-color: #1A1446;
+  margin: 5px;
+  padding: 15px;
+  color: white;
+
+}
+
+#submit { /* New style*/
+  margin-top: 5px;
+}
+
+a:hover { /* New style */
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.15);
 }

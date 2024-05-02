@@ -177,7 +177,7 @@ export function NewsReader() {
           setCredentials={setCredentials}
         />
         <section className="parent">
-          <div className="box">
+          <div className="box box2"> {/*Added box 2 class*/}
             <span className="title">Query Form</span>
             <QueryForm
               currentUser={currentUser}
@@ -186,7 +186,7 @@ export function NewsReader() {
               submitToParent={onFormSubmit}
             />
           </div>
-          <div className="box">
+          <div className="box box2"> {/*Added box 2 class*/}
             <span className="title">Saved Queries</span>
 
             <SavedQueries
@@ -198,9 +198,11 @@ export function NewsReader() {
             <button onClick={resetSavedQueries}>Reset</button>
             )} 
           </div>
-          <div className="box">
+          <div className="box box2"> {/*Added box 2 class*/}
             <span className="title">Articles List</span>
+            <div className="scroll-container">
             <Articles query={query} data={data} />
+            </div>
           </div>
         </section>
       </div>

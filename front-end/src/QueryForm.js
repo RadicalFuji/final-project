@@ -56,7 +56,7 @@ export function QueryForm(params) {
         </div>
         <div
           className={currentUserIsAdmin() ? "visible" : "hidden"}
-          style={{ border: "solid black 1px" }}
+          style={{ border: "solid black 1px", padding: "5px" }}  /* Adjusted padding */
         >
           {/* Extra fields */}
           <div>
@@ -89,8 +89,8 @@ export function QueryForm(params) {
             />
           </div>
         </div>
-        <span style={{ display: "block", backgroundColor: "#eee" }}>
-          <input type="button" value="Submit" onClick={onSubmitClick} />
+        <span style={{ display: "block"}}> {/* Removed background color */}
+          <input type="button" id="submit" value="Submit" onClick={onSubmitClick} /> {/*Added button id for styling */}
         </span>
       </form>
     </div>
