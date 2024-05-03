@@ -7,10 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#queryName, #q { /*Styled*/
+#queryName, #q, #user, #password { /*Styled*/
   border-radius: 10px;
   margin: 5px;
   padding: 5px;
+
 }
 
 /* header p{

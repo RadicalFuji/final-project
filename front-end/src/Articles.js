@@ -27,7 +27,7 @@ export function Articles(params) {
                 fontWeight: "bold", // Style properties
                 color: "blue",
               };
-              return (<li key={idx}><a href={item.url} target="_blank" rel="noreferrer"><span style={titleStyle}>{item.title}</span></a></li>); //   
+              return (<li key={idx}><a href={item.url} target="_self" rel="noreferrer"><span style={titleStyle}>{item.title}</span></a></li>); //Changed target to self to allow story to open in new window
                 }else{
                   return (<li key={idx}>No Title</li>);
                 }
